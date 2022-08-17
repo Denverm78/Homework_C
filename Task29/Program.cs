@@ -16,7 +16,7 @@ void RandomArray(int count1, int a, int b)
     int[] Array = new int[count1];
     for (int i = 0; i < count1; i++)
     {
-        Array[i] = new Random().Next(a, b+1);
+        Array[i] = new Random().Next(a, b);
     }
     //for (int i = 0; i < count1; i++)
     //{
