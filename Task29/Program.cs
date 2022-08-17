@@ -7,9 +7,8 @@ Console.WriteLine("Введите количество элементов мас
 int count = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число а - начало интервала: ");
 int numberA = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите число b - конец интервала: ");
+Console.WriteLine("Введите число b - конец интервала: "); //b не включается
 int numberB = int.Parse(Console.ReadLine());
-//numberB+=1;
 
 void RandomArray(int count1, int a, int b)
 {
@@ -18,11 +17,7 @@ void RandomArray(int count1, int a, int b)
     {
         Array[i] = new Random().Next(a, b);
     }
-    //for (int i = 0; i < count1; i++)
-    //{
-        //Console.Write($"{Array[i]} ");
-
-    //}
+    
     Console.WriteLine($"[{String.Join(", ", Array)}]");
     Console.WriteLine();
 }
